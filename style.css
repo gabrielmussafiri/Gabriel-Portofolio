@@ -82,7 +82,7 @@ img{
     box-shadow: 0 2rem 2rem var(--color-primary-light);
 }
 .btn-primary{
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     color: var(--color-white);
 }
 /* Nav */
@@ -144,7 +144,7 @@ section.landing{
  
 section.landing .container{
     display: grid;
-    grid-template-columns: 5rem auto 28rem;
+    grid-template-columns: 5rem auto 26rem;
     gap: 2rem;
 }
 section.landing .socials{
@@ -185,5 +185,60 @@ section.landing .info p{
 }
 section.landing .profile-area{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.landing .profile-area .outer-circle{
+    width: 26rem;
+    height: 26rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    position: relative;
+    animation: move 30s linear infinite;
+   
+}
+
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+section.landing .profile-area .outer-circle span{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    background: var(--color-white);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem var(--color-primary-light);
+}
+section.landing .profile-area .outer-circle span:nth-child(1){
+    left: calc(50% - 2rem);
+    top: -2rem;
+}
+section.landing .profile-area .outer-circle span:nth-child(2){
+    right: -2rem;
+    top: calc(50% - 2rem);
+}
+section.landing .profile-area .outer-circle span:nth-child(3){
+    left:-2rem;
+    top:calc(50% - 2rem);
+}
+section.landing .profile-area .outer-circle span:nth-child(4){
+    bottom: -2rem;
+    left: calc(50% - 2rem);
+}
+
+section.landing .profile-area .inner-circle{
+   position: absolute;
+   width: 18rem;
+   height: 18rem;
+   border-radius: 50%;
+   overflow:hidden ;
 
 }
