@@ -87,7 +87,7 @@ img{
     color: var(--color-white);
 }
 /* Nav */
-na{
+nav{
     width: 100%;
     height: 5rem;
     background: var(--color-white);
@@ -111,4 +111,26 @@ nav button{
 }
 nav h3{
     color: var(--color-primary);
+}
+nav .container ul{
+    display: flex;
+    height: 100%;
+}
+nav .container ul li a{
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    position: relative;
+    transition: var(--transition);
+}
+
+nav .container ul li a:hover{
+    color: var(--color-primary);
+}
+nav .container ul li a.active{
+    background: var(--color-primary);
+    color: var(--color-white);
 }
