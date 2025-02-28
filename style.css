@@ -341,19 +341,19 @@ section.skills .item:nth-child(3) .progress-area .progress{
     width: 55%;
 }
 section.skills .skill:nth-child(2) .item .progress-area .progress{
-    width: 85%;
+    width: 95%;
 }
 section.skills .skill:nth-child(2) .item:nth-child(2) .progress-area .progress{
-    width: 65%;
+    width: 95%;
 }
 section.skills .skill:nth-child(2) .item:nth-child(3) .progress-area .progress{
     width: 55%;
 }
 section.skills .skill:nth-child(2) .item:nth-child(4) .progress-area .progress{
-    width: 35%;
+    width: 95%;
 }
 section.skills .skill:nth-child(3) .item .progress-area .progress{
-    width: 75%;
+    width: 95%;
 }
 section.skills .skill .items{
     display: none;
