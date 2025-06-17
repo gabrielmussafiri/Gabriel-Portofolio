@@ -58,3 +58,54 @@ window.addEventListener("scroll", () => {
     .querySelector("nav")
     .classList.toggle("show-box-shadow", window.scrollY > 0);
 });
+
+// Theme Toggle
+const themeToggle = document.getElementById('theme-toggle');
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+// Check for saved theme preference or use system preference
+const currentTheme = localStorage.getItem('theme') || 
+    (prefersDarkScheme.matches ? 'dark' : 'light');
+
+// Apply the theme
+document.documentElement.setAttribute('data-theme', currentTheme);
+
+// Theme toggle click handler
+themeToggle.addEventListener('click', () => {
+    const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' 
+        ? 'light' 
+        : 'dark';
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Modal for graphic project previews
+  const modal = document.getElementById('graphic-modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalBehance = document.getElementById('modal-behance');
+  const closeModal = document.getElementById('close-modal');
+
+  // Attach click listeners to gallery images (flexbox version)
+  document.querySelectorAll('.graphic-gallery-item img').forEach((img) => {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      modalImg.src = img.src;
+      modalImg.alt = img.alt;
+      modalBehance.href = img.getAttribute('data-behance') || '#';
+      modal.style.display = 'flex';
+    });
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside modal-content
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});

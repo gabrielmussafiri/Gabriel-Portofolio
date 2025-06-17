@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 </head>
 <body>
     <!-- Benging of nav bar -->
     <nav>
         <div class="container">
-            <a href="#"><h3>Gabriel M.</h3></a>
+            <a href="#"><h3>Gabriel Godlive M.</h3></a>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -29,14 +31,18 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Let's Talk</a></li>
             </ul>
-            <button id="menu-btn"><span class="material-icons-sharp" >menu</span></button>
-            <button id="close-btn"><span class="material-icons-sharp" >close</span></button>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="material-icons-sharp light-icon">light_mode</span>
+                <span class="material-icons-sharp dark-icon">dark_mode</span>
+            </button>
+            <button id="menu-btn"><span class="material-icons-sharp">menu</span></button>
+            <button id="close-btn"><span class="material-icons-sharp">close</span></button>
         </div>
     </nav>
     <!-- End of nav bar -->
 
     <!-- Benging of Landing Section -->
-    <section class="landing">
+    <section class="landing" data-aos="fade-up">
         <div class="container">
             <div class="socials">
                 <a href="https://www.linkedin.com/in/gabriel-mussafiri-7018aa244/" target="_blank"><i class="uil uil-linkedin"></i></a>
@@ -45,7 +51,7 @@
             </div>
             <div class="info">
                 <h1>UX/UI Designer & Front End Web Developer</h1>
-                <h3>hi, I'm Gabriel Mussafiri</h3>
+                <h3>hi, I'm Gabriel Godlive M</h3>
                 <p>I can help you by creating a top-noch custom-designed website and software application that's specifically designed to increase your treaffic and conversion rates.</p>
                 <a href="#contact" class="btn btn-primary">Let's Talk</a>
             </div>
@@ -70,35 +76,22 @@
 
 
     <!-- Begining of ABout Section -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-up">
         <h1>About</h1>
         <div class="container">
-        <div class="images">
-            <img src="./images/profil2.jpeg" alt="">
-        </div>
-        <div class="info">
-            <p>I'm a passionate UI/UX designer and front-end web developer with over 2 years of experience in the field. 
-               I hold a bachelor's degree in computer science,
-                 
-            </p>
-            <p>When it comes to my work, I take immense pride in being a diligent and hardworking individual.
-               I love to challenge myself and continually push my boundaries to deliver top-notch results in my projects.
-            </p>
-            <div class="read-more-content">
-                <p>What truly drives me is helping people and businesses achieve their goals. 
-                    Through innovative software solutions, I aim to contribute to their growth and success. 
-                    Creating user-friendly and visually captivating interfaces is my forte, 
-                    ensuring that users have an enjoyable experience interacting with digital products and applications.
-                </p>
-                <p>I'm always excited to embrace new opportunities and face fresh challenges. With my skills and dedication, 
-                    I'm confident in making a positive impact in the world of software development.
-                    Thank you for taking the time to get to know me. 
-                    I'm looking forward to connecting and collaborating with like-minded individuals who share my passion for innovation and making a difference.
-                </p>
+            <div class="images">
+                <img src="./images/profil2.jpeg" alt="">
             </div>
-            <a class="read-more">Show more</a>
-            <a href="images/Gabriel Cv.pdf" download class="btn btn-primary"><span class="material-icons-sharp">download</span>Download CV</a>
-        </div>
+            <div class="info">
+                <p>I'm a multi-skilled software developer, UI/UX designer, and IT manager with over 4 years of hands-on experience across digital product design, front-end development, and IT systems.</p>
+                <div class="read-more-content">
+                    <p>With a strong foundation in Computer Science and a passion for innovation, I've had the privilege to lead and contribute to impactful projects—ranging from e-commerce platforms and humanitarian tech to digital marketing campaigns and certificate management systems. I currently serve as an IT Specialist & Data Analyst at the South African Red Cross Western Cape, while also running my own software company, LYGM Group, focused on AI Solutions for Automation & Cybersecurity & Compliance</p>
+                    <p>What drives me is solving real-world problems through intuitive design, clean code, and smart systems. Whether it's building full-stack applications with the MERN stack, automating workflows using Python, or designing engaging user experiences, I take pride in delivering work that is both technically sound and people-centered.</p>
+                    <p>I'm always eager to collaborate with like-minded individuals and organizations who believe in the power of technology to create meaningful change. Let's connect, build, and make a difference—one solution at a time.</p>
+                </div>
+                <a class="read-more">Show more</a>
+                <a href="images/Gabriel Cv.pdf" download class="btn btn-primary"><span class="material-icons-sharp">download</span>Download CV</a>
+            </div>
         </div>
     </section>
     <!-- End About Section -->
@@ -106,175 +99,158 @@
 
 
     <!-- Begining of Skills section -->
-    <section class="skills" id="skills">
+    <section class="skills" id="skills" data-aos="fade-up">
         <h1>Skills</h1>
         <div class="container">
-            <!-- Skill 1 -->
+            <!-- UI/UX & Visual Design -->
             <div class="skill">
                 <div class="head">
-                        <div class="left">
-                            <span class="material-icons-sharp">draw</span>
-                            <h4>UI/UX Design</h4>
-                        </div>
-                        <div class="right">
-                            <span class="material-icons-sharp">expand_more</span>
-                        </div>
+                    <div class="left">
+                        <span class="material-icons-sharp">palette</span>
+                        <h4>UI/UX & Visual Design</h4>
+                    </div>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
                 </div>
-
-                <div class="items">
-                        <!-- Begining of Item -->
-                        <div class="item">
-                            <h5>Figma</h5>
-                            <div class="progress-area">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                                </div>
-                                <h5>65%</h5>
-                            </div>
-                        </div>
-                        <!-- End of item -->
+                <div class="items show-items">
+                    <div class="item"><h5>Figma</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>Canva</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:95%"></div></div><h5>95%</h5></div></div>
+                    <div class="item"><h5>Adobe Photoshop & Lightroom</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><h5>75%</h5></div></div>
+                    <div class="item"><h5>Adobe Premiere Pro & After Effects</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:60%"></div></div><h5>60%</h5></div></div>
+                    <div class="item"><h5>UI Wireframing & Prototyping</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>Branding & Visual Identity</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:85%"></div></div><h5>85%</h5></div></div>
+                </div>
+            </div>
+            <!-- Front-End Development -->
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">code</span>
+                        <h4>Front-End Development</h4>
+                    </div>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                </div>
+                <div class="items show-items">
+                    <div class="item"><h5>HTML5</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:98%"></div></div><h5>98%</h5></div></div>
+                    <div class="item"><h5>CSS3</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:95%"></div></div><h5>95%</h5></div></div>
+                    <div class="item"><h5>Bootstrap</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:95%"></div></div><h5>95%</h5></div></div>
+                    <div class="item"><h5>Tailwind CSS</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:98%"></div></div><h5>98%</h5></div></div>
+                    <div class="item"><h5>JavaScript (ES6+)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:95%"></div></div><h5>95%</h5></div></div>
+                    <div class="item"><h5>React.js</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:92%"></div></div><h5>92%</h5></div></div>
+                    <div class="item"><h5>Next.js</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>Framer Motion / GSAP (animations)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><h5>75%</h5></div></div>
+                </div>
+            </div>
+            <!-- Back-End & Full Stack Development -->
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">storage</span>
+                        <h4>Back-End & Full Stack Development</h4>
+                    </div>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                </div>
+                <div class="items show-items">
+                    <div class="item"><h5>Node.js + Express.js</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>MongoDB</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:70%"></div></div><h5>70%</h5></div></div>
+                    <div class="item"><h5>Firebase (Auth, Firestore)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>PostgreSQL</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:60%"></div></div><h5>60%</h5></div></div>
+                    <div class="item"><h5>REST API Development</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><h5>75%</h5></div></div>
+                    <div class="item"><h5>Google Sheets as DB</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:85%"></div></div><h5>85%</h5></div></div>
+                </div>
+            </div>
+            <!-- Data, Automation & AI Tools -->
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">insights</span>
+                        <h4>Data, Automation & AI Tools</h4>
+                    </div>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                </div>
+                <div class="items show-items">
+                    <div class="item"><h5>Python (Data & Automation)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:85%"></div></div><h5>85%</h5></div></div>
+                    <div class="item"><h5>Streamlit</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>Pandas, NumPy</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><h5>75%</h5></div></div>
+                    <div class="item"><h5>Google Apps Script</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>AI-powered app integration (Gemini, Vision, etc.)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:70%"></div></div><h5>70%</h5></div></div>
+                </div>
+            </div>
+            <!-- Digital Marketing & Communication -->
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">campaign</span>
+                        <h4>Digital Marketing & Communication</h4>
+                    </div>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                </div>
+                <div class="items show-items">
+                    <div class="item"><h5>Social Media Management</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>Facebook/Meta Ads (Lead Gen, Advantage+)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><h5>75%</h5></div></div>
+                    <div class="item"><h5>Copywriting (Posts, Ads, Captions)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:85%"></div></div><h5>85%</h5></div></div>
+                    <div class="item"><h5>WhatsApp Business Integration</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:85%"></div></div><h5>85%</h5></div></div>
+                </div>
+            </div>
+            <!-- IT Support & Systems Management -->
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">support_agent</span>
+                        <h4>IT Support & Systems Management</h4>
+                    </div>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                </div>
+                <div class="items show-items">
+                    <div class="item"><h5>General IT Support (Hardware, Software, Network)</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:90%"></div></div><h5>90%</h5></div></div>
                     
-                        <!-- Begining of Item -->
-                        <div class="item">
-                            <h5>Adobe Photoshop & Light Room</h5>
-                            <div class="progress-area">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                            </div>
-                            <h5>75%</h5>
-                        </div>
-                    </div>
-                        <!-- End of item -->
-                         <!-- Begining of Item -->
-                        <div class="item">
-                            <h5>Adobe Premier & After Effect </h5>
-                            <div class="progress-area">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                                </div>
-                                <h5>55%</h5>
-                            </div>
-                                </div>
                 </div>
-
-                       
-                
             </div>
-
-            <!-- Skill 2 -->
-
+            <!-- Media & Content Production -->
             <div class="skill">
                 <div class="head">
-                        <div class="left">
-                            <span class="material-icons-sharp">code</span>
-                            <h4>Front End Development</h4>
-                        </div>
-                        <div class="right">
-                            <span class="material-icons-sharp">expand_more</span>
-                        </div>
-                </div>
-
-                <div class="items">
-                    <!-- Begining of Item -->
-                    <div class="item">
-                        <h5>Html</h5>
-                        <div class="progress-area">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                            <h5>95%</h5>
-                        </div>
+                    <div class="left">
+                        <span class="material-icons-sharp">mic</span>
+                        <h4>Media & Content Production</h4>
                     </div>
-                    <!-- End of item -->
-                
-
-                <!-- Begining of Item -->
-                <div class="item">
-                    <h5>Css</h5>
-                    <div class="progress-area">
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <h5>95%</h5>
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
                     </div>
                 </div>
-                <!-- End of item -->
-                 <!-- Begining of Item -->
-                <div class="item">
-                    <h5>Bootstap</h5>
-                    <div class="progress-area">
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <h5>95%</h5>
-                    </div>
+                <div class="items show-items">
+                    <div class="item"><h5>Podcast Hosting & Editing</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:80%"></div></div><h5>80%</h5></div></div>
+                    <div class="item"><h5>Livestream Event Management</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:85%"></div></div><h5>85%</h5></div></div>
+                    <div class="item"><h5>OBS Studio, Zoom, YouTube</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:75%"></div></div><h5>75%</h5></div></div>
                 </div>
-                <!-- End of item --><!-- Begining of Item -->
-                <div class="item">
-                    <h5>Tailwin Css</h5>
-                    <div class="progress-area">
-                        <div class="progress-bar">
-                            <div class="progress"></div>
-                        </div>
-                        <h5>95%</h5>
-                    </div>
-                </div>
-                <!-- End of item -->
-                    <!-- Begining of Item -->
-                    <div class="item">
-                        <h5>JavaScript</h5>
-                        <div class="progress-area">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                            <h5>95%</h5>
-                        </div>
-                    </div>
-                    <!-- End of item -->
-                
-
-                <!-- Begining of Item -->
-                <div class="item">
-                <h5>React </h5>
-                <div class="progress-area">
-                    <div class="progress-bar">
-                        <div class="progress"></div>
-                    </div>
-                    <h5>90%</h5>
-                </div>
-             </div>
             </div>
-
-           
-                
-             </div>
-              <!-- Skill 3 -->
+            <!-- Soft Skills & Languages -->
             <div class="skill">
                 <div class="head">
-                        <div class="left">
-                            <span class="material-icons-sharp">preview</span>
-                            <h4>Digital Marketing</h4>
-                        </div>
-                        <div class="right">
-                            <span class="material-icons-sharp">expand_more</span>
-                        </div>
-                </div>
-
-                <div class="items">
-                    <!-- Begining of Item -->
-                    <div class="item">
-                        <h5>Social Media Management</h5>
-                        <div class="progress-area">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                            <h5>65%</h5>
-                        </div>
+                    <div class="left">
+                        <span class="material-icons-sharp">emoji_people</span>
+                        <h4>Soft Skills & Languages</h4>
                     </div>
-                    <!-- End of item -->
-
-            </div>
-                
+                    <div class="right">
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                </div>
+                <div class="items show-items">
+                    <div class="item"><h5>Leadership & Project Coordination</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:90%"></div></div><h5>90%</h5></div></div>
+                    <div class="item"><h5>French</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:100%"></div></div><h5>Native</h5></div></div>
+                    <div class="item"><h5>English</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:95%"></div></div><h5>Fluent</h5></div></div>
+                    <div class="item"><h5>IsiZulu</h5><div class="progress-area"><div class="progress-bar"><div class="progress" style="width:40%"></div></div><h5>Beginner</h5></div></div>
+                </div>
             </div>
         </div>
     </section>
@@ -284,7 +260,7 @@
 
 
     <!-- Begining of Services section -->
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-up">
         <h1>Services</h1>
         <div class="container">
             <div class="service">
@@ -309,7 +285,13 @@
                 <p>As a Social Media Manager, I excel at crafting impactful online strategies to elevate your brand's presence and engagement across various social media platforms. Through content creation, community management, and data-driven insights, 
                 I'll help your business build a strong online presence and connect with your target audience..
                 </p>
-            </div> 
+            </div>
+
+            <div class="service">
+                <span class="material-icons-sharp">brush</span>
+                <h3>Graphic Design</h3>
+                <p>I offer creative graphic design services, including branding, posters, flyers, social media graphics, and more. My designs are tailored to elevate your brand and communicate your message visually and effectively.</p>
+            </div>
         </div>
 
     </section>
@@ -318,79 +300,109 @@
 
 
     <!-- Begining of Portfolio section -->
-    <section class="recent-work" id="portfolio">
+    <section class="recent-work" id="portfolio" data-aos="fade-up">
         <div class="container">
             <h4>My Recent Work</h4>
-                <h1>Here Are Some Of My Most Recent Solo Projects</h1>
-                <div class="projects">
-                    <div class="project">
-                            <div class="thubmnail">
-                                <img src="images/lygm-group.png" alt="">
-
-                            </div>
-                            <h2>Complete Responsive Photography Website</h2>
-                            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Repudiandae dolorum sint amet tempora voluptatem aperiam libero tenetur, sequi cum ut ea praesentium sunt nam, 
-                                non dignissimos deserunt excepturi! Officia, voluptate! -->
-                            </p>
-                            <div class="actions">
-                                <a href="https://github.com/gabrielmussafiri/LYGM-PHOTOGRAPHY" target="_blank">Github</a>
-                                <a href="https://www.lygm-group.com/" target="_blank">Live Demo</a>
-                            </div>
-                    </div>
-                    <!-- End project -->
-
-                    <div class="project">
-                        <div class="thubmnail">
-                            <img src="images/quote generator.png" alt="">
-
-                        </div>
-                        <h2>Simple Quote Generator Web App</h2>
-                        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Repudiandae dolorum sint amet tempora voluptatem aperiam libero tenetur, sequi cum ut ea praesentium sunt nam, 
-                            non dignissimos deserunt excepturi! Officia, voluptate!
-                        </p> -->
-                        <div class="actions">
-                            <a href="https://github.com/gabrielmussafiri/Quote-Generator-Project" target="_blank">Github</a>
-                            <a href="https://gm-quotes.netlify.app/" target="_blank">Live Demo</a>
-                        </div>
-                    </div>
-                    <!-- end project -->
-
-                    <div class="project">
+            <h1>Web & Software Projects</h1>
+            <div class="projects">
+                <div class="project" data-aos="flip-left" data-aos-delay="0">
                     <div class="thubmnail">
-                        <img src="images/Figma.png" alt="">
-
+                        <img src="images/complianta.png" alt="">
                     </div>
-                    <h2>Reservation Table Restaurant Prototype</h2>
-                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Repudiandae dolorum sint amet tempora voluptatem aperiam libero tenetur, sequi cum ut ea praesentium sunt nam, 
-                        non dignissimos deserunt excepturi! Officia, voluptate! -->
-                    </p>
+                    <h2>Us Compliance & Ai Governance Company</h2>
                     <div class="actions">
-                        <a href="#" target="_blank">Github</a>
-                        <a href="https://www.figma.com/proto/0Lg6vO8ua1SNzCKJc8XzP5/Reserve-a-Table-Prototype?type=design&node-id=820-949&t=8GI7Qz3BfaVGKKw8-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=820%3A949" target="_blank">Live Demo</a>
+                        <!-- <a href="https://github.com/gabrielmussafiri/LYGM-PHOTOGRAPHY" target="_blank">Github</a> -->
+                        <a href="https://compliantas.com/" target="_blank">Live Demo</a>
                     </div>
-                    </div>
-                    <!-- end project -->
-
-                    <div class="project">
-                        <div class="thubmnail">
-                            <img src="images/wireframe.png" alt="">
-    
-                        </div>
-                        <h2>Low fidelity Wireframe Mobile Application</h2>
-                        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Repudiandae dolorum sint amet tempora voluptatem aperiam libero tenetur, sequi cum ut ea praesentium sunt nam, 
-                            non dignissimos deserunt excepturi! Officia, voluptate! -->
-                        </p>
-                        <div class="actions">
-                            <a href="#" target="_blank">Github</a>
-                            <a href="#" target="_blank">Live Demo</a>
-                        </div>
-                        </div>
-                        <!-- end project -->
                 </div>
+                <div class="project" data-aos="flip-right" data-aos-delay="150">
+                    <div class="thubmnail">
+                        <img src="images/Lending.png" alt="">
+                    </div>
+                    <h2>French Diaspora Economic Platform</h2>
+                    <div class="actions">
+                        <!-- <a href="https://github.com/gabrielmussafiri/Quote-Generator-Project" target="_blank">Github</a> -->
+                        <a href="https://lendinecofund.com/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="thubmnail">
+                        <img src="images/lygm.png" alt="">
+                    </div>
+                    <h2>ZA Software Company</h2>
+                    <div class="actions">
+                        <a href="https://lygmgroup.co.za/#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                
+                
+                <div class="project" data-aos="rotate-c" data-aos-delay="450">
+                    <div class="thubmnail">
+                        <img src="images/tumikia.png" alt="">
+                    </div>
+                    <h2>Multi Service Platform</h2>
+                    <div class="actions">
+                        <!-- <a href="#" target="_blank">Github</a> -->
+                        <a href="https://tumikiasarl.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="thubmnail">
+                        <img src="images/Chikkii.png" alt="">
+                    </div>
+                    <h2>Ecommerce Website</h2>
+                    <div class="actions">
+                        <a href="https://chikkii.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="thubmnail">
+                        <img src="images/mom.png" alt="">
+                    </div>
+                    <h2>Medical & Health Website</h2>
+                    <div class="actions">
+                        <a href="https://medicsonmove.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin: 4rem 0; border: none; border-top: 2px solid var(--color-primary-light);">
+            <h1>Digital Graphic Projects</h1>
+            <div class="graphic-gallery-wrapper">
+                <div class="graphic-gallery">
+                    <!-- Gallery Item 1 -->
+                    <div class="graphic-gallery-item">
+                        <img src="images/lygmbranding.jpg" alt="Branding Poster" data-behance="https://www.behance.net/gallery/218641505/Social-media-poster">
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="graphic-gallery-item">
+                        <img src="images/happyHoliday.JPG" alt="Happy Holiday Poster" data-behance="https://www.behance.net/gallery/your-project-2">
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="graphic-gallery-item">
+                        <img src="images/SocialMediaPoster.jpeg" alt="Event Flyer" data-behance="https://www.behance.net/gallery/your-project-3">
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    
+                    <div class="graphic-gallery-item">
+                        <img src="images/YouthDay.jpg" alt="International Youth Day" data-behance="https://www.behance.net/gallery/your-project-4">
+                    </div>
+                    <div class="graphic-gallery-item">
+                        <img src="images/01 First_Aid.jpg" alt="International Youth Day" data-behance="https://www.behance.net/gallery/your-project-4">
+                    </div>
+                    <div class="graphic-gallery-item">
+                        <img src="images/Volunteers sarcs.jpg" alt="International Youth Day" data-behance="https://www.behance.net/gallery/your-project-4">
+                    </div>
+                    <div class="graphic-gallery-item">
+                        <img src="images/libota.jpg" alt="International Youth Day" data-behance="https://www.behance.net/gallery/your-project-4">
+                    </div>
+                    <div class="graphic-gallery-item">
+                        <img src="images/Myjourney_TI.jpg" alt="International Youth Day" data-behance="https://www.behance.net/gallery/your-project-4">
+                    </div>
+                    <!-- Add more items as needed -->
+                </div>
+            </div>
         </div>
     </section>
     <!-- end of portofolio -->
@@ -401,7 +413,7 @@
 
 
     <!-- Begining of Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <div class="overlay">
             <div class="container">
                 <h1>Let's Talk </h1>
@@ -444,11 +456,27 @@
 
         </div>
         <div class="copyright">
-            copyright &copy; Gabriel Mussafiri 2023
+            copyright &copy; Gabriel Godlive M. 2025
         </div>
     </footer>
     <!-- End of Footer -->
 <script src="main.js"></script>
+<!-- AOS Animation JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
     
+<!-- Graphic Project Modal -->
+<div id="graphic-modal" class="graphic-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
+  <div class="modal-content" style="position:relative; background:#222; border-radius:1.2rem; padding:2rem; max-width:90vw; max-height:90vh; display:flex; flex-direction:column; align-items:center;">
+    <button id="close-modal" style="position:absolute; top:1rem; right:1rem; background:none; border:none; color:#fff; font-size:2rem; cursor:pointer;">&times;</button>
+    <img id="modal-img" src="" alt="Graphic Preview" style="max-width:80vw; max-height:60vh; border-radius:1rem; box-shadow:0 2px 16px rgba(0,0,0,0.3);">
+    <a id="modal-behance" href="#" target="_blank" style="margin-top:2rem; padding:1rem 2.5rem; background:var(--color-primary); color:#fff; border-radius:2rem; font-weight:bold; font-size:1.1rem; text-decoration:none; box-shadow:0 2px 8px rgba(0,0,0,0.08); transition:background 0.2s;">View on Behance</a>
+  </div>
+</div>
 </body>
 </html>
